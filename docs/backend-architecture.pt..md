@@ -1,8 +1,5 @@
 # Indexu Core – Backend Architecture
 
-> 📂 Este documento descreve a arquitetura **alta nível** do backend do projeto Indexu Core.  
-> Não contém segredos, credenciais ou detalhes sensíveis.
-
 ---
 
 ## 1. Visão Geral
@@ -66,7 +63,7 @@ src/
   workers/            # Workers (ex: processamento de vídeo)
   utils/              # Utilitários (jwt, hash, storage, etc.)
   types/              # Tipagens auxiliares
-💡 Observação: essa estrutura é intencionalmente genérica e não expõe detalhes internos específicos.
+
 
 4. Fluxo de Requisição (API HTTP)
 O cliente (app/web) faz uma requisição HTTP para o backend.
@@ -112,7 +109,7 @@ A análise da mídia (ex.: futuro pipeline de IA multimodal) é feita em etapa s
 
 Ao final, o status da mídia é atualizado para ready ou failed.
 
-Nenhum endpoint público, segredo, bucket ou URL real são expostos neste documento.
+
 
 6. Modelo de Dados (Resumo Prisma)
 A definição dos modelos é feita com Prisma.
@@ -149,7 +146,7 @@ enum MediaStatus {
   failed
   deleted
 }
-Aqui você mostra a ideia da modelagem sem expor campos internos mais sensíveis ou lógicas específicas.
+
 
 7. Segurança e Boas Práticas
 Este repositório:

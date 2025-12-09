@@ -1,8 +1,6 @@
 # Indexu Core – Backend Architecture
 
-> 📂 This document provides a **high-level overview** of the backend architecture of the Indexu Core project.  
-> It does **not** include secrets, credentials, or private internal logic.
-
+ 
 ---
 
 ## 1. Overview
@@ -108,7 +106,6 @@ AI analysis (future stage) runs separately.
 
 Media ends as ready or failed.
 
-No internal buckets, URLs, endpoints or secrets are revealed here.
 
 6. Prisma Models (Simplified)
 ts
@@ -145,7 +142,6 @@ enum MediaStatus {
 7. Security & Best Practices
 .env is not committed to GitHub
 
-no secrets or storage URLs are exposed
 
 environment variables configure dependencies
 
